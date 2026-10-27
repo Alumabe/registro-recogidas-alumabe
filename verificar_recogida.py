@@ -75,8 +75,9 @@ def main(folder: str) -> int:
     check(computed == reg["record_hash"], f"record_hash = {computed}")
 
     print("2) Ficheros")
-    for key, name in (("signature_sha256", "firma.png"), ("photo_sha256", "bultos.jpg")):
-        expected = data.get(key)
+    files = [(data.get("signature_sha256"), "firma.png"), (data.get("photo_sha256"), "bultos.jpg")]
+    files += [(h, f"bultos_{i}.jpg") for i, h in enumerate(data.get("extra_photos_sha256") or [], start=2)]
+    for expected, name in files:
         path = os.path.join(folder, "registro", name)
         if expected is None:
             print(f"  --    sin {name}")
