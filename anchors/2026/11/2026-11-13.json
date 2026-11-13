@@ -1,0 +1,18 @@
+{
+  "chain_head": "29e3dd812589dee62be5dd19e8d7e838f8b18737f6575d1f819e9572507804d8",
+  "day": "2026-11-13",
+  "first_record_id": 33,
+  "hash_algorithm": "SHA-256",
+  "last_record_id": 35,
+  "merkle_root": "d9eeea90060fb7d87b24f1d829955afcf43a5bd7efa1ac767b591e75c0da3473",
+  "prev_anchor_sha256": "bde53005d59e660553ebfe34025af6b542414bff98f2cab2ab187c1962bbefdf",
+  "record_count": 3,
+  "record_hashes": [
+    "6662e9c743a13543d3be4f9bbf6c2a13390c667b88a1cefe46360382d5463b67",
+    "f564fc7838a9137c643a32d2b89d36b0df972f17da2225cd8ac7289b2c9fa713",
+    "29e3dd812589dee62be5dd19e8d7e838f8b18737f6575d1f819e9572507804d8"
+  ],
+  "timezone": "Europe/Madrid",
+  "type": "alumabe-pickup-ledger-anchor",
+  "version": 1
+}
